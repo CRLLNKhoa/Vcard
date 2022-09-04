@@ -137,12 +137,40 @@
                     <div class="row-blog">
                         <ul class="col col-12 col-lg-12 col-md-12 fillter__list">
                             <li class="list acctive" data-filter="all">All</li>
+                            <li class="list" data-filter="certificate">Certificate</li>
                             <li class="list" data-filter="games">Games</li>
                             <li class="list" data-filter="anime">Anime</li>
                             <li class="list" data-filter="background">Background</li>
                         </ul>
                     </div>
                     <div class="row-blog collection-list">
+                        <div class="col col-12 col-lg-4 col-md-6 conllection__item " data-item="certificate">
+                            <div class="collection__dvimg">
+                                <img src="../assets/img/ct/HTML.png" onclick="myFuntion(this)" alt="a" class="collection__img">
+                            </div>
+                            <div class="collection__info">
+                                <span class="collection__name">Certificate #HTML-CSS</span>
+                                <span class="collection__sub">Collect</span>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-lg-4 col-md-6 conllection__item " data-item="certificate">
+                            <div class="collection__dvimg">
+                                <img src="../assets/img/ct/js.png" onclick="myFuntion(this)" alt="a" class="collection__img">
+                            </div>
+                            <div class="collection__info">
+                                <span class="collection__name">Certificate #Javascrip basic</span>
+                                <span class="collection__sub">Collect</span>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-lg-4 col-md-6 conllection__item " data-item="certificate">
+                            <div class="collection__dvimg">
+                                <img src="../assets/img/ct/REp.png" onclick="myFuntion(this)" alt="a" class="collection__img">
+                            </div>
+                            <div class="collection__info">
+                                <span class="collection__name">Certificate #Responesive</span>
+                                <span class="collection__sub">Collect</span>
+                            </div>
+                        </div>
                         <div class="col col-12 col-lg-4 col-md-6 conllection__item " data-item="games">
                             <div class="collection__dvimg">
                                 <img src="../assets/img/collection/Aatrox_0.jpg" onclick="myFuntion(this)" alt="a" class="collection__img">
@@ -257,7 +285,7 @@
         </div>
     </div>
     <div class="show-collection">
-        <button class="show-collection__close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="show-collection__close" onclick="closeShowImg()"><i class="fa-solid fa-xmark"></i></div>
         <div class="show-collection__divImg">
             <img src="" alt="" id="img-main">
         </div>

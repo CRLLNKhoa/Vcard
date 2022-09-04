@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./assets/css/animation.css">
     <!-- Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Responesive -->
     <link rel="stylesheet" href="./assets/css/responesive.css">
 </head>
@@ -50,11 +51,35 @@
                 <a href="https://crllnkhoa.github.io/TikiClone/" target="_blank">TikiClone</a>
             </li>
         </ul>
+        
     </div>
     <!-- Cover image -->
     <div class="container-fluid cover-img" style="padding: 0;">
         <div class="cover-img__bg">
+            <button id="change-img" onclick="changeImgCover()"><i class="fa-solid fa-palette"></i></button>
+            <div class="option-change">
+                <div class="option-change-list">
+                    <div id="cv0"></div>
+                    <div id="cv1"></div>
+                    <div id="cv2" onclick="change1()"></div>
+                    <div id="cv3" onclick="change2()"></div>
+                </div>
+                <form name="formChange" class="change-input">
+                    <input type="text" id="inputCoverImg" name="link" placeholder="   Link Image">
+                    <div id="btnChange" onclick="changeLink()">Change</div>
+                </form>
+            </div>
         </div>
+    </div>
+    <!-- Toast hello -->
+    <div class="hello-toast">
+        <div class="heading-toast">
+            <span>LNKhoa</span>
+            <i class="fa-solid fa-hands-clapping"></i>
+            <i class="fa-solid fa-hands-clapping"></i>
+            <i class="fa-solid fa-hands-clapping"></i>
+        </div>
+        <div class="body-toast">Welcome to my website! (◕‿↼)</div>
     </div>
     <!-- Content wrapper -->
     <div class="container gutter-top">
@@ -147,50 +172,74 @@
                     <div class="line-parent">
                         <div class="line-child"></div>
                     </div>
-                    <div class="detail-skill row">
-                        <ul class="skill-list col col-12 col-lg-12 col-md-12">
-                            <li class="skill-item">
-                                <div class="skill-total">
-                                    <div class="skill-html">
-                                        <span class="name-skill">HTML</span>
+                    <div class="row divSkill">
+                        <div class="skill-detail">
+                            <ul class="skill-list col col-12 col-lg-12 col-md-12">
+                                <li class="skill-item">
+                                    <div class="skill-total">
+                                        <div class="skill-html">
+                                            <span class="name-skill">HTML</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <div class="skill-total">
-                                    <div class="skill-css">
-                                        <span class="name-skill">CSS</span>
+                                </li>
+                                <li class="skill-item">
+                                    <div class="skill-total">
+                                        <div class="skill-css">
+                                            <span class="name-skill">CSS</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <div class="skill-total">
-                                    <div class="skill-js">
-                                        <span class="name-skill">Javacript</span>
+                                </li>
+                                <li class="skill-item">
+                                    <div class="skill-total">
+                                        <div class="skill-js">
+                                            <span class="name-skill">Javacript</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <div class="skill-total">
-                                    <div class="skill-rep">
-                                        <span class="name-skill">Responesive</span>
+                                </li>
+                                <li class="skill-item">
+                                    <div class="skill-total">
+                                        <div class="skill-rep">
+                                            <span class="name-skill">Responesive</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <div class="skill-total">
-                                    <div class="skill-bootstrap">
-                                        <span class="name-skill">Bootstrap</span>
+                                </li>
+                                <li class="skill-item">
+                                    <div class="skill-total">
+                                        <div class="skill-bootstrap">
+                                            <span class="name-skill">Bootstrap</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="section__item-desc">Programming Languages &amp; Tools</h3>
+                    <div class=" show-skill">
+                        <span class="icon-skill orange"><i class="fa-brands fa-html5"></i></span>
+                        <span class="icon-skill blue"><i class="fa-brands fa-css3-alt"></i></span>
+                        <span class="icon-skill js"><i class="fa-brands fa-js"></i></span>
+                        <span class="icon-skill php"><i class="fa-brands fa-php"></i></span>
+                        <span class="icon-skill laravel"><i class="fa-brands fa-laravel"></i></span>
+                        <span class="icon-skill blue"><i class="fa-brands fa-wordpress"></i></span>
+                        <span class="icon-skill purple"><i class="fa-brands fa-bootstrap"></i></span>
+                        <span class="icon-skill soon"><i class="fa-brands fa-react"></i><span class="comming">Comming soon</span></span>
+                    </div>
+                    <div class="h1">Interests</div>
+                    <div class="line-parent">
+                        <div class="line-child"></div>
+                    </div>
+                    <div class="interests__body"> 
+                        <p>Apart from being a developer, I spend most of my spare time to listen to some beautiful relaxing songs.</p> 
+                        <p>In addition, in my spare time I often read &amp; update documents online.</p> 
+                        <p>Sometime, I make a cup of coffee ☕ and follow a number of anime, sword hero movies and television shows.</p> 
+                        <p>...</p>  
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 </body>
 <!-- Script -->
-<script src="./assets/js/main.js"></script>
+<script src="./assets/js/main.js"  type="text/javascript"></script>
 </html>

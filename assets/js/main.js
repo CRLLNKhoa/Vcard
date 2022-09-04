@@ -7,6 +7,18 @@ function loadingTime() {
 }
 var loadingRun = setTimeout(loadingTime, 1000);
 
+// Toast
+var toast = document.querySelector('.hello-toast');
+ function showToast(){
+    toast.style.right = 0;
+ }
+ function hideToast(){
+    toast.style.right = '-100%';
+    toast.style.animation = 'blogHover 0.4s ease-in '
+ }
+
+var showToastRun  = setTimeout(showToast, 500);
+var showToastRun  = setTimeout(hideToast, 5000);
 // More pages
 
 var btnMorePages = document.querySelector('.more-btn');
@@ -129,7 +141,11 @@ var over = document.querySelector('.show-collection');
 function closeShowImg(){
     over.classList.add('none');
 }
-btnCloseShowImg.addEventListener('click',closeShowImg)
+
+// btnCloseShowImg.addEventListener('click',closeShowImg);
+
+
+
 
 function myFuntion(smallImg){
     let fullImg = document.querySelector('#img-main');
@@ -181,3 +197,71 @@ function play(){
         document.getElementById("result").style.color="red";
     }
 }
+
+// Change cover img
+
+var coverImg = document.querySelector('.cover-img__bg');
+var btnCV0 = document.querySelector('#cv0');
+var btnCV1 = document.querySelector('#cv1');
+var btnCV2 = document.querySelector('#cv2');
+var btnCV3 = document.querySelector('#cv3');
+var change = document.querySelector('.option-change');
+
+var cover0 = './assets/img/cover_img.jpeg';
+var cover1 = './assets/img/cover_img1.jpg';
+var cover2 = './assets/img/cover_img2.jfif';
+var cover3 = './assets/img/cover_img3.jfif';
+
+
+    btnCV0.addEventListener('click', function(){
+        coverImg.style.backgroundImage = `url(${cover0})`;
+        btnCV0.classList.add('select-cover-img')
+        btnCV1.classList.remove('select-cover-img')
+        btnCV2.classList.remove('select-cover-img')
+        btnCV3.classList.remove('select-cover-img')
+    })
+    
+    btnCV1.addEventListener('click',function(){
+        coverImg.style.backgroundImage = `url(${cover1})`;
+        btnCV0.classList.remove('select-cover-img')
+        btnCV1.classList.add('select-cover-img')
+        btnCV2.classList.remove('select-cover-img')
+        btnCV3.classList.remove('select-cover-img')
+    });
+
+   function change1(){
+            coverImg.style.backgroundImage = `url(${cover2})`;
+            btnCV0.classList.remove('select-cover-img')
+            btnCV1.classList.remove('select-cover-img')
+            btnCV2.classList.add('select-cover-img')
+            btnCV3.classList.remove('select-cover-img')
+        };
+    
+
+ 
+    function change2(){
+            coverImg.style.backgroundImage = `url(${cover3})`;
+            btnCV0.classList.remove('select-cover-img')
+            btnCV1.classList.remove('select-cover-img')
+            btnCV2.classList.remove('select-cover-img')
+            btnCV3.classList.add('select-cover-img')
+        };
+
+    function changeImgCover(){
+        change.classList.toggle('show')
+    }
+
+    
+    function changeLink(){
+        let inputCoverImg = document.forms["formChange"]["link"].value;
+        if(inputCoverImg == ''){
+            coverImg.style.backgroundImage = `url(${cover1})`;
+        }
+        else if(inputCoverImg){
+            coverImg.style.backgroundImage = `url(${inputCoverImg})`;
+        }
+        return false;
+    }
+    
+
+    
