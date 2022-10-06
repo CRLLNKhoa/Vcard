@@ -1,234 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/favicon.png"
+      type="image/x-icon"
+    />
     <title>Vcard: LNKhoa</title>
     <!-- Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/base.css">
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
     <!-- Animation -->
-    <link rel="stylesheet" href="../assets/css/animation.css">
+    <link rel="stylesheet" href="../assets/css/animation.css" />
     <!-- Bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
     <!-- Responesive -->
-    <link rel="stylesheet" href="../assets/css/responesive.css">
-</head>
-<body class="index is-home is-multiple">
+    <link rel="stylesheet" href="../assets/css/responesive.css" />
+  </head>
+  <body class="index is-home is-multiple">
     <!-- Loading -->
     <div class="loading">
-        <div class="loading__content">
-            <div class="circle-pulse">
-                <div class="circle-pulse__1"></div>
-                <div class="circle-pulse__2"></div>
-            </div>
-            <div class="process">
-                <span></span>
-            </div>
+      <div class="loading__content">
+        <div class="circle-pulse">
+          <div class="circle-pulse__1"></div>
+          <div class="circle-pulse__2"></div>
         </div>
+        <div class="process">
+          <span></span>
+        </div>
+      </div>
     </div>
     <!-- More pages -->
-    <div class="more-btn" style="transform: translateX(0px); opacity: 1;">
-        <span class="fa-solid fa-bars"></span>
+    <div class="more-btn" style="transform: translateX(0px); opacity: 1">
+      <span class="fa-solid fa-bars"></span>
     </div>
-    <div class="btnSlideNav slideClose">
-    </div>
-    <div class="overlay-slideNav" style="opacity: 0; z-index: -1;"></div>
+    <div class="btnSlideNav slideClose"></div>
+    <div class="overlay-slideNav" style="opacity: 0; z-index: -1"></div>
     <div class="more-page">
-        <ul class="more-page__list">
-            <li class="more-page__list-item-title">
-                <h4>More pages</h4>
-            </li>
-            <li class="more-page__list-item">
-                <a href="https://crllnkhoa.github.io/blog/" target="_blank">Blog</a>
-            </li>
-            <li class="more-page__list-item">
-                <a href="https://crllnkhoa.github.io/TikiClone/" target="_blank">TikiClone</a>
-            </li>
-        </ul>
+      <ul class="more-page__list">
+        <li class="more-page__list-item-title">
+          <h4>More pages</h4>
+        </li>
+        <li class="more-page__list-item">
+          <a href="https://crllnkhoa.github.io/blog/" target="_blank">Blog</a>
+        </li>
+        <li class="more-page__list-item">
+          <a href="https://crllnkhoa.github.io/TikiClone/" target="_blank"
+            >TikiClone</a
+          >
+        </li>
+      </ul>
     </div>
     <!-- Cover image -->
-    <div class="container-fluid cover-img" style="padding: 0;">
-        <div class="cover-img__bg">
-        </div>
+    <div class="container-fluid cover-img" style="padding: 0">
+      <div class="cover-img__bg"></div>
     </div>
     <!-- Content wrapper -->
     <div class="container gutter-top">
-        <div class="header box">
-            <div class="header__left">
-                <div class="header__photo">
-                    <img src="../assets/img/avatar.jpg" alt="" class="header__photo-img">
-                </div>
-                <div class="header__base-info">
-                    <h4>Lương Nguyễn Khoa</h4>
-                    <div class="status">Fresher Front-End Developer</div>
-                    <ul class="header__social">
-                        <li><a href="https://www.facebook.com/lnkhoa1205" target="__blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="https://crllnkhoa.github.io/CRLLNKhoa"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="tel:0366611060"><i class="fa-brands fa-telegram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="header__right">
-                <ul class="header__contact">
-                    <li><span class="overhead">Email</span>lnkhoa1205@gmail.com</li>
-                    <li><span class="overhead">Phone</span>0366 611 060</li>
-                </ul>
-                <ul class="header__contact">
-                    <li><span class="overhead">Birthday</span>12 May, 2000</li>
-                    <li><span class="overhead">Location</span>An Giang, Việt Nam</li>
-                </ul>
-            </div>
+      <div class="header box">
+        <div class="header__left">
+          <div class="header__photo">
+            <img
+              src="../assets/img/avatar.jpg"
+              alt=""
+              class="header__photo-img"
+            />
+          </div>
+          <div class="header__base-info">
+            <h4>Lương Nguyễn Khoa</h4>
+            <div class="status">Fresher Front-End Developer</div>
+            <ul class="header__social">
+              <li>
+                <a href="https://www.facebook.com/lnkhoa1205" target="__blank"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://crllnkhoa.github.io/CRLLNKhoa"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="tel:0366611060"
+                  ><i class="fa-brands fa-telegram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="row content-main">
-            <!-- Slidebar nav -->
-            <aside class="col-12 col-md-12 col-lg-2">
-                <div class="sidebar box sticky-column">
-                    <ul class="nav">
-                        <li class="nav__item">
-                            <a href="../index.html" class="nav__link">
-                                <i class="fa-solid fa-user"></i>
-                                About
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="../page/resume.html" class="nav__link acctive">
-                                <i class="fa-solid fa-file"></i>
-                                Resume
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="../page/works.html" class="nav__link">
-                                <i class="fa-solid fa-image"></i>
-                                Collection
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="../page/blog.html" class="nav__link">
-                                <i class="fa-solid fa-book"></i>
-                                Blog
-                            </a>
-                        </li>
-                        <li class="nav__item ">
-                            <a href="../page/minigame.html" class="nav__link ">
-                                <i class="fa-solid fa-gamepad"></i>
-                                Mini Games
-                            </a>
-                        </li>
-                        <li class="nav__item ">
-                            <a class="nav__link ">
-                                <i class="fa-solid fa-address-book"></i>
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                    </div>
-            </aside>
-            <div class="col-12 col-md-12 col-lg-10">
-                <div class="content__contact box">
-                    <div class="h1">Resume</div>
-                    <div class="line-parent">
-                        <div class="line-child"></div>
-                    </div>
-                    <div class="h1" style="margin:20px 0 ;">
-                        <img  width="30px" src="https://cdn.jsdelivr.net/gh/minhkhoi2001/code/vcard/icon-education.svg" alt="">
-                        <span style="font-size: 1.5rem;">Education</span>
-                    </div>
-                    <div class="time-line">
-                        <article class="timeline__item">
-                            <h5 class="title title--h5 timeline__title">Take courses at F8</h5>
-                            <span class="timeline__period">2022 - Present</span>
-                            <span class="timeline__description">
-                                <span> Complete courses:</span>
-                                <a  href="./works.html" class="timeline__description-item hover-html-css">
-                                    <p class="timeline__period-item" >Lập Trình JavaScript Cơ Bản</p>
-                                    <span class="sub__period"><img src="../assets/img/ct/HTML.png" alt=""></span>
-                                </a>
-                                <a  href="./works.html" class="timeline__description-item">
-                                    <p class="timeline__period-item">Lập Trình JavaScript Cơ Bản</p>
-                                    <span class="sub__period"><img src="../assets/img/ct/js.png" alt=""></span>
-                                </a>
-                                <a href="./works.html" class="timeline__description-item hover-rep">
-                                    <p class="timeline__period-item hover-rep">Responsive Với Grid System</p>
-                                    <span class="sub__period"><img src="../assets/img/ct/REp.png" alt=""></span>
-                                </a>
-                            </span>
-                        </article>
-                        <article class="timeline__item">
-                            <h5 class="title title--h5 timeline__title">An Giang University - Vietnam National University, Ho Chi Minh City</h5>
-                            <span class="timeline__period">2018 — 2022</span>
-                            <p class="timeline__description">Studied information technology of the school's information technology department.</p>
-                        </article>
-                        <article class="timeline__item">
-                            <h5 class="title title--h5 timeline__title">Nguyen Binh Khiem high school</h5>
-                            <span class="timeline__period">2015 — 2018</span>
-                            <p class="timeline__description">Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.</p>
-                        </article>
-                    </div>
-                    <div class="h1" style="margin:20px 0 ;">
-                        <img  width="30px" src="https://cdn.jsdelivr.net/gh/minhkhoi2001/code/vcard/icon-experience.svg" alt="">
-                        <span style="font-size: 1.5rem;">Experience</span>
-                    </div>
-                    <div class="time-line">
-                        <article class="timeline__item">
-                            <div class="timeline__item-heading">
-                                <h5 class="title title--h5 timeline__title">Vcard and some other products</h5>
-                                <span class="timeline__period">September, 2022</span>
-                            </div>
-                            <span class="timeline__period">FRONT-END</span>
-                            <div class="timeline__item-body">
-                                <p>
-                                    <a href="https://crllnkhoa.github.io/Vcard" target="_blank">- Vcard</a> this is a self-introduction website
-                                </p>
-                                <p>
-                                   COMMING SOON...
-                                </p>
-                                <p>Language: pure <span>HTML, CSS, Javascript.</span></p>
-                            </div>
-                        </article>
-                        <article class="timeline__item">
-                            <div class="timeline__item-heading">
-                                <h5 class="title title--h5 timeline__title">Make copies of some websites</h5>
-                                <span class="timeline__period">2022</span>
-                            </div>
-                            <span class="timeline__period">BASIC FRONT-END</span>
-                            <div class="timeline__item-body">
-                                <p>
-                                    <a href="https://crllnkhoa.github.io/TikiClone/" target="_blank">- Clone Tiki</a> is a small version of tiki including the homepage and product details.
-                                </p>
-                                <p>
-                                    <a href="https://crllnkhoa.github.io/blog/" target="_blank">- My Blog</a> is a small blog site that displays clean blog posts with a friendly interface.
-                                </p>
-                                <p>Language: pure <span>HTML, CSS, Javascript.</span></p>
-                                <p>And some projects made in php laravel, WordPress and course projects.</p>
-                            </div>
-                        </article>
-                        <article class="timeline__item">
-                            <div class="timeline__item-heading">
-                                <h5 class="title title--h5 timeline__title">START</h5>
-                                <span class="timeline__period">2022</span>
-                            </div>
-                            <span class="timeline__period">BASIC FRONT-END LEARN</span>
-                            <div class="timeline__item-body">
-                                <p>
-                                    <a href="https://fullstack.edu.vn/" target="_blank">- F8</a> is a free coding community that I have learned programming languages there.
-                                </p>
-                                <p>
-                                    I also regularly search and consult for more knowledge in some sources by other platforms such as <a href="https://www.w3schools.com/" target="_blank">W3School,</a> <a href="https://developer.mozilla.org/fr/" target="_blank">MDN Web Docs,</a> Blog,...
-                                </p>
-                                <p>Language: pure <span>HTML, CSS, Javascript.</span></p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
+        <div class="header__right">
+          <ul class="header__contact">
+            <li><span class="overhead">Email</span>lnkhoa1205@gmail.com</li>
+            <li><span class="overhead">Phone</span>0366 611 060</li>
+          </ul>
+          <ul class="header__contact">
+            <li><span class="overhead">Birthday</span>12 May, 2000</li>
+            <li><span class="overhead">Location</span>An Giang, Việt Nam</li>
+          </ul>
         </div>
+      </div>
+      <div class="row content-main">
+        <!-- Slidebar nav -->
+        <aside class="col-12 col-md-12 col-lg-2">
+          <div class="sidebar box sticky-column">
+            <ul class="nav">
+              <li class="nav__item">
+                <a href="../index.html" class="nav__link">
+                  <i class="fa-solid fa-user"></i>
+                  About
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="../page/resume.html" class="nav__link acctive">
+                  <i class="fa-solid fa-file"></i>
+                  Resume
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="../page/works.html" class="nav__link">
+                  <i class="fa-solid fa-image"></i>
+                  Collection
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="../page/blog.html" class="nav__link">
+                  <i class="fa-solid fa-book"></i>
+                  Blog
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="../page/minigame.html" class="nav__link">
+                  <i class="fa-solid fa-gamepad"></i>
+                  Mini Games
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link">
+                  <i class="fa-solid fa-address-book"></i>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <div class="col-12 col-md-12 col-lg-10">
+          <div class="content__contact box">
+            <div class="h1">Resume</div>
+            <div class="line-parent">
+              <div class="line-child"></div>
+            </div>
+            <div class="h1" style="margin: 20px 0">
+              <img
+                width="30px"
+                src="https://cdn.jsdelivr.net/gh/minhkhoi2001/code/vcard/icon-education.svg"
+                alt=""
+              />
+              <span style="font-size: 1.5rem">Education</span>
+            </div>
+            <div class="time-line">
+              <article class="timeline__item">
+                <h5 class="title title--h5 timeline__title">
+                  Take courses at F8
+                </h5>
+                <span class="timeline__period">2022 - Present</span>
+                <span class="timeline__description">
+                  <span> Complete courses:</span>
+                  <a
+                    href="./works.html"
+                    class="timeline__description-item hover-html-css"
+                  >
+                    <p class="timeline__period-item">
+                      Lập Trình JavaScript Cơ Bản
+                    </p>
+                    <span class="sub__period"
+                      ><img src="../assets/img/ct/HTML.png" alt=""
+                    /></span>
+                  </a>
+                  <a href="./works.html" class="timeline__description-item">
+                    <p class="timeline__period-item">
+                      Lập Trình JavaScript Cơ Bản
+                    </p>
+                    <span class="sub__period"
+                      ><img src="../assets/img/ct/js.png" alt=""
+                    /></span>
+                  </a>
+                  <a
+                    href="./works.html"
+                    class="timeline__description-item hover-rep"
+                  >
+                    <p class="timeline__period-item hover-rep">
+                      Responsive Với Grid System
+                    </p>
+                    <span class="sub__period"
+                      ><img src="../assets/img/ct/REp.png" alt=""
+                    /></span>
+                  </a>
+                </span>
+              </article>
+              <article class="timeline__item">
+                <h5 class="title title--h5 timeline__title">
+                  An Giang University - Vietnam National University, Ho Chi Minh
+                  City
+                </h5>
+                <span class="timeline__period">2018 — 2022</span>
+                <p class="timeline__description">
+                  Studied information technology of the school's information
+                  technology department.
+                </p>
+              </article>
+              <article class="timeline__item">
+                <h5 class="title title--h5 timeline__title">
+                  Nguyen Binh Khiem high school
+                </h5>
+                <span class="timeline__period">2015 — 2018</span>
+                <p class="timeline__description">
+                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
+                  delenit atque corrupti, quos dolores et quas molestias
+                  exceptur.
+                </p>
+              </article>
+            </div>
+            <div class="h1" style="margin: 20px 0">
+              <img
+                width="30px"
+                src="https://cdn.jsdelivr.net/gh/minhkhoi2001/code/vcard/icon-experience.svg"
+                alt=""
+              />
+              <span style="font-size: 1.5rem">Experience</span>
+            </div>
+            <div class="time-line">
+              <article class="timeline__item">
+                <div class="timeline__item-heading">
+                  <h5 class="title title--h5 timeline__title">
+                    Clone Website Divine Shop
+                  </h5>
+                  <span class="timeline__period">October, 2022</span>
+                </div>
+                <span class="timeline__period">FRONT-END</span>
+                <div class="timeline__item-body">
+                  <p>
+                    <a
+                      href="https://633e89458926a8735c5a1235--adorable-faloodeh-ec19f5.netlify.app/"
+                      target="_blank"
+                      >- Divine Shop clone</a
+                    >
+                    Built almost like the interface of the website: https://divineshop.vn about 80%. Using existing libraries and knowledge base, build reusable Components.
+                  </p>
+                  <p>Demo:<a
+                    href="https://633e89458926a8735c5a1235--adorable-faloodeh-ec19f5.netlify.app/"
+                    target="_blank"
+                    > Divine Shop clone</a
+                  ></p>
+                  <p>Built with: ReactJS, SCSS.</span></p>
+                </div>
+              </article>
+              <article class="timeline__item">
+                <div class="timeline__item-heading">
+                  <h5 class="title title--h5 timeline__title">
+                    Vcard and some other products
+                  </h5>
+                  <span class="timeline__period">September, 2022</span>
+                </div>
+                <span class="timeline__period">FRONT-END</span>
+                <div class="timeline__item-body">
+                  <p>
+                    <a href="https://crllnkhoa.github.io/Vcard" target="_blank"
+                      >- Vcard</a
+                    >
+                    this is a self-introduction website
+                  </p>
+                  <p>COMMING SOON...</p>
+                  <p>Built with: pure <span>HTML, CSS, Javascript.</span></p>
+                </div>
+              </article>
+              <article class="timeline__item">
+                <div class="timeline__item-heading">
+                  <h5 class="title title--h5 timeline__title">
+                    Make copies of some websites
+                  </h5>
+                  <span class="timeline__period">2022</span>
+                </div>
+                <span class="timeline__period">BASIC FRONT-END</span>
+                <div class="timeline__item-body">
+                  <p>
+                    <a
+                      href="https://crllnkhoa.github.io/TikiClone/"
+                      target="_blank"
+                      >- Clone Tiki</a
+                    >
+                    is a small version of tiki including the homepage and
+                    product details.
+                  </p>
+                  <p>
+                    <a href="https://crllnkhoa.github.io/blog/" target="_blank"
+                      >- My Blog</a
+                    >
+                    is a small blog site that displays clean blog posts with a
+                    friendly interface.
+                  </p>
+                  <p>Built with: pure <span>HTML, CSS, Javascript.</span></p>
+                  <p>
+                    And some projects made in php laravel, WordPress and course
+                    projects.
+                  </p>
+                </div>
+              </article>
+              <article class="timeline__item">
+                <div class="timeline__item-heading">
+                  <h5 class="title title--h5 timeline__title">START</h5>
+                  <span class="timeline__period">2022</span>
+                </div>
+                <span class="timeline__period">BASIC FRONT-END LEARN</span>
+                <div class="timeline__item-body">
+                  <p>
+                    <a href="https://fullstack.edu.vn/" target="_blank">- F8</a>
+                    is a free coding community that I have learned programming
+                    languages there.
+                  </p>
+                  <p>
+                    I also regularly search and consult for more knowledge in
+                    some sources by other platforms such as
+                    <a href="https://www.w3schools.com/" target="_blank"
+                      >W3School,</a
+                    >
+                    <a href="https://developer.mozilla.org/fr/" target="_blank"
+                      >MDN Web Docs,</a
+                    >
+                    Blog,...
+                  </p>
+                  <p>Language: pure <span>HTML, CSS, Javascript.</span></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-<!-- Script -->
-<script src="../assets/js/main.js"></script>
+  </body>
+  <!-- Script -->
+  <script src="../assets/js/main.js"></script>
 </html>

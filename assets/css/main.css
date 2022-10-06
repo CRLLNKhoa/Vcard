@@ -531,6 +531,13 @@ body {
         background-color: #53397A;
         border-radius: 20px;
     }
+    .skill-react{
+        width: 50%;
+        height: 100%;
+        position: relative;
+        background-color: #2b84e2;
+        border-radius: 20px;
+    }
     .name-skill{
         color: var(--white);
         font-weight: bold;
